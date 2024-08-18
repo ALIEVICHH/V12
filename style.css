@@ -42,7 +42,9 @@ table {
 	border-spacing: 0;
 }
 
-
+html, body {
+    touch-action: none;
+}
 body{
     background-color: #000;
 }
@@ -58,7 +60,7 @@ main {
     height: 100%;
 }
 
-.v12{
+#v12{
     background: #2F2F2F;
     background: linear-gradient(to bottom, #2F2F2F 0%, #B0B0B0 100%);
     -webkit-background-clip: text;
@@ -70,7 +72,7 @@ main {
     font-style: normal;
     user-select: none;
 }
-.time{
+#time{
     color: #111;
     font-size: 80%;
     font-family: "Inter", sans-serif;
@@ -81,4 +83,21 @@ main {
     user-select: none;
 
 }
+.timecolor{
+    color: #111;
+    text-decoration: none;
+}
+.timecolor:hover{
+    color: #B0B0B0;
+    transition: 1s;
+}
+
+
+#video{
+    display: none;
+    position: absolute;
+    width: 30vh;
+    border-radius: 330px;
+    border: solid 3px #2F2F2F
+} 
 
